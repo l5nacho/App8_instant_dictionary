@@ -8,7 +8,3 @@ class Definition:
     def get(self):
         df = pd.read_csv('data.csv')
         return tuple(df.loc[df.word == self.term, 'definition'])
-
-if __name__ == '__main__':
-    d = Definition('rain')
-    print(d.get())
