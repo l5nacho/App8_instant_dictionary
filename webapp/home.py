@@ -13,7 +13,7 @@ class Home:
         toolbar = jp.QToolbar(a=header)
 
         drawer = jp.QDrawer(a=layout, show_if_above=True, v_mode='left', bordered=True)
-        jp.QBtn(a=toolbar, dense=True, flat=True, round=True, icon="Menu", click=cls.move_drawer,
+        jp.QBtn(a=toolbar, dense=True, flat=True, round=True, icon="menu", click=cls.move_drawer,
                 drawer=drawer)
         jp.QToolbarTitle(a=toolbar, text='Instant dictionary')
         container = jp.QPageContainer(a=layout)
